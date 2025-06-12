@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Définition du bean MedicamentDaoJpa -->
+	<bean id="MedicamentDaoJpa" class="com.sidoCop.sysPharma.dao.MedicamentDaoJpa" init-method="initialisation" destroy-method="destruction">
+	</bean>
+
+	<!-- Définition du bean MedicamentDao -->
+	<bean id="medicamentDao" class="com.sidoCop.sysPharma.dao.MedicamentDao" init-method="initialisation" destroy-method="destruction">
+	</bean>
+
+	<!-- Définition du bean MedicamentService -->
+	<bean id="serviceMedicament" class="com.sidoCop.sysPharma.service.ServiceMedicament" init-method="initialisation" destroy-method="destruction">
+
+		<!-- Injection de dépendance (Setter Injection) -->
+		<!-- Spring va appeler la méthode setIMedicamentDao(IDao dao) sur l'instance de ServiceMedicament -->
+		<!-- et lui passer en argument le bean dont l'id est "MedicamentDao"   ref="compteDao" : Référence à un autre bean défini dans ce fichier XML (ou un autre fichier XML chargé par le contexte).
+		Ici, cela signifie que Spring va injecter (passer en argument à la méthode setIMedicamentDao) le bean dont l'id est MedicamentDao.-->
+
+		<property name="imedicamentDao" ref="medicamentDao" />
+	</bean>
+	
+</beans>

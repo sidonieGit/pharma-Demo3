@@ -1,0 +1,56 @@
+# Compiled class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Log Files
+*.log
+logs/
+target/*.log
+
+# Maven generated directories
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# Eclipse Files
+.classpath
+.project
+.settings/
+*.launch
+.metadata
+
+# IntelliJ IDEA Files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code Files
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Other temporary files
+*~
+*.bak
+*.swp
+
+# Specific to your project if needed (e.g., local database files if any were created, though none yet for Pharma3)
+# *.sqlite
