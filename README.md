@@ -35,7 +35,7 @@ Ce dépôt contient la troisième itération du projet "Pharma". Cette version m
 2.  **Cloner le dépôt :**
 
     ```bash
-    git clone [https://github.com/votre_utilisateur/Pharma3.git](https://github.com/votre_utilisateur/Pharma3.git)
+    git clone https://github.com/sidonieGit/pharma-Demo3.git
     cd Pharma3
     ```
 
@@ -53,9 +53,7 @@ Ce dépôt contient la troisième itération du projet "Pharma". Cette version m
 
 ## Prochaines Étapes Possibles
 
-- Passer d'une implémentation DAO mockée à une persistance réelle avec une base de données (JDBC direct, JPA/Hibernate).
-- Explorer l'injection de dépendances basée sur les annotations Spring (`@Autowired`, `@Component`, etc.).
-- Mettre en place des tests unitaires et d'intégration robustes avec Spring Test.
+- Transition vers la **configuration Spring basée sur Java et les annotations**
 
 ---
 
